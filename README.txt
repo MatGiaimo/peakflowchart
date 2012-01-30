@@ -1,5 +1,6 @@
-			PeakFlow Chart
-		Copyright (c) 2012 Mathew Giaimo
+			  PeakFlow Chart
+		https://code.google.com/p/peakflowchart/
+		  Copyright (c) 2012 Mathew Giaimo
 
 What is it?
 -----------
