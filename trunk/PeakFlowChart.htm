@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" http-equiv="Content-Script-Type" content="text/javascript" />
+    <title>Peak Flow Chart</title>
+    <script type="text/javascript" src="PeakFlow.js"></script>
+</head>
+<body>
+    <form id="dataSubmit">
+    <div style="float: left">
+        <div>
+            <h2 id="patient">
+                Patient:
+            </h2>
+        </div>
+        <h2>Table from XML</h2>
+        <div id="tableXML" style="width:300px">
+        </div>
+        <h2>
+            Table from JSON</h2>
+        <div id="tableJSON">
+        </div>
+    </div>
+    <div>
+        <canvas id="chart" style="border-width: 2px; border-style: solid; border-color: Black;"
+            width="640" height="480">
+    Your browser must support HTML5.
+    </canvas>
+    </div>
+    <div>
+        <div>
+            <label style="text-decoration: underline">
+                Enter Measurement</label>
+        </div>
+        <div>
+            <div style="float: left; width: 55px">
+                <label>
+                    Date:</label>
+            </div>
+            <div>
+                <input type="text" id="sDate" />
+            </div>
+        </div>
+        <div>
+            <div style="float: left; width: 55px">
+                <label>
+                    Reading:</label>
+            </div>
+            <div>
+                <input type="text" id="sReading" />
+            </div>
+        </div>
+        <div>
+            <input type="radio" id="rMorning" name="ToD" value="morning" /><label for="rMorning">Morning</label>
+            <input type="radio" id="rEvening" name="ToD" value="evening" /><label for="rEvening">Evening</label>
+        </div>
+        <div>
+            <input type="button" id="bSubmit" name="submit" value="submit" onclick="peakFlowSubmit.updateData();" /></div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<dates patient="Mathew Giaimo" age="29">
+  <date mmddyyyy="01/24/2012">
+    <morning>572</morning>
+    <evening>588</evening>
+  </date>
+  <date mmddyyyy="01/25/2012">
+    <morning>576</morning>
+    <evening>583</evening>
+  </date>
+  <date mmddyyyy="01/27/2012">
+    <morning>476</morning>
+    <evening>501</evening>
+  </date>
+  <date mmddyyyy="01/28/2012">
+    <morning>458</morning>
+    <evening>599</evening>
+  </date>
+</dates>
