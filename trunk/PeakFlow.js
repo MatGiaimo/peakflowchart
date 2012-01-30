@@ -66,7 +66,7 @@ function peakFlow() {
 // for this to work in Chrome you must start it with
 // the -allow-file-acces-from-files switch
 function getXML(fileName) {
-    var xmlHttp;
+    var xmlHttp, xmlDoc;
 
     // Try to create XMLHttpRequest
     if(!xmlHttp) {
@@ -89,12 +89,6 @@ function getXML(fileName) {
     if (window.DOMParser){
       parser=new DOMParser();
       xmlDoc=parser.parseFromString(xmlHttp.responseText,"text/xml");
-    }
-    // IE
-    else {
-      xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
-      xmlDoc.async=false;
-      xmlDoc.loadXML(xmlHttp.responseText); 
     }
      
     return xmlDoc;
